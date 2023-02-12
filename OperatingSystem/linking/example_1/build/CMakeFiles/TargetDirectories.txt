@@ -1,0 +1,6 @@
+/home/book/Desktop/learning_note/OperatingSystem/linking/build/CMakeFiles/rebuild_cache.dir
+/home/book/Desktop/learning_note/OperatingSystem/linking/build/CMakeFiles/edit_cache.dir
+/home/book/Desktop/learning_note/OperatingSystem/linking/build/CMakeFiles/shared_lib.dir
+/home/book/Desktop/learning_note/OperatingSystem/linking/build/CMakeFiles/static_lib.dir
+/home/book/Desktop/learning_note/OperatingSystem/linking/build/CMakeFiles/exmaple_2.dir
+/home/book/Desktop/learning_note/OperatingSystem/linking/build/CMakeFiles/exmaple_1.dir

@@ -1,0 +1,1 @@
+// Remove destructor from critical section

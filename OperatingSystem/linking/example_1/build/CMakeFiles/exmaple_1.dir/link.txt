@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/exmaple_1.dir/main.cpp.o  -o exmaple_1  libstatic_lib.a 

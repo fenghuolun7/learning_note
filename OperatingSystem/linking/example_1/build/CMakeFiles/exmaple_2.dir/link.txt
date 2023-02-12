@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/exmaple_2.dir/main.cpp.o  -o exmaple_2  -Wl,-rpath,/home/book/Desktop/learning_note/OperatingSystem/linking/build libshared_lib.so 
