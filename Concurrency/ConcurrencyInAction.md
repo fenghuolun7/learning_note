@@ -160,13 +160,13 @@ std::recursive_mutex
 std::condition_variable 只能与 std::mutex 同时使用（preferred）
 std::condition_variable_any 可以与 任何 mutex-like  mutex 使用，所以他有额外开销
 
-### `notify_one()` 与 `wait()` 搭配使用**
+### **`notify_one()` 与 `wait()` 搭配使用**
 
 当条件不满足的时候， `wait()` 解锁 并让程序阻塞（因为如果不解锁， 其它线程就无法加锁）
 当条件满足的时候 加锁
 `notify_one()`必须与`std::unique_lock()`配合使用，因为`wait()` 会重复加锁解锁。
 
-### `notify_one()` 与 `notify_all()` 的区别**
+### **`notify_one()` 与 `notify_all()` 的区别**
 
 
 ### **future() 与 condition wait() notify() 比较**
@@ -176,7 +176,7 @@ future() promise() 只等一次
 event 发生之后， future 不可重置。
 
 
-### **future()
+### **future()**
 
 std::future 不提供线程同步机制， 需要 加锁或其它来保护
 适用于后台程序
