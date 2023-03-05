@@ -65,6 +65,7 @@ int main()
 ## Will reset() affect other shared objects pointing to the same object ?
 
 NO, it only affect the managed object.
-See QA_1.cpp as an example.
+See reset.cpp as an example.
 
 ## Can shared_ptr work with std::ref() ?
+YES, it can, see QA_2 for a example.
