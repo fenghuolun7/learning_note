@@ -55,17 +55,8 @@ public:
     std::shared_ptr<T> wait_and_pop()
     {   
         std::lock_guard<std::mutex> head_lock(head_mutex);
-        if (head.get() == get_tail())
-        {
-            return nullptr;
-        }
+        data_cond.wait(head_lock,[this]{return !data_queue.empty();});
         std::unique_ptr<node> const old_head = std::move(head);
-        head = std::move(old_head->next);
-        return old_head;
-        data_cond.wait(lk,[this]{return !data_queue.empty();});
-        std::unique_ptr<node> old_head = pop_head();
-        // std::shared_ptr<T>() here is nullptr,
-        // does not allocate memory.
         return old_head->data;
     }
 
@@ -80,5 +71,9 @@ public:
         tail->next = std::move(p);
         tail = new_tail;
         data_cond.notify_one();
+    }
+
+    bool empty(){
+        
     }
 };
